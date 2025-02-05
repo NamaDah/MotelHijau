@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('ReservationID')->constrained('reservations')->onDelete('cascade');
             $table->foreignId('RoomID')->constrained('rooms')->onDelete('cascade');
             $table->dateTime('CheckIn');
-            $table->dateTime('CheckIn');
             $table->dateTime('CheckOut');
             $table->timestamps();
         });
